@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83EF78602BF569ED0017FD76 /* Coomloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coomloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EF78602BF569ED0017FD76 /* Downcoomer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downcoomer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EF78632BF569ED0017FD76 /* Coom2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coom2App.swift; sourceTree = "<group>"; };
 		83EF78652BF569ED0017FD76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83EF78672BF569EF0017FD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		83EF78612BF569ED0017FD76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83EF78602BF569ED0017FD76 /* Coomloader.app */,
+				83EF78602BF569ED0017FD76 /* Downcoomer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83EF785F2BF569ED0017FD76 /* Coomloader */ = {
+		83EF785F2BF569ED0017FD76 /* Downcoomer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83EF786F2BF569EF0017FD76 /* Build configuration list for PBXNativeTarget "Coomloader" */;
+			buildConfigurationList = 83EF786F2BF569EF0017FD76 /* Build configuration list for PBXNativeTarget "Downcoomer" */;
 			buildPhases = (
 				83EF785C2BF569ED0017FD76 /* Sources */,
 				83EF785D2BF569ED0017FD76 /* Frameworks */,
@@ -105,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = Coomloader;
+			name = Downcoomer;
 			productName = Coom2;
-			productReference = 83EF78602BF569ED0017FD76 /* Coomloader.app */;
+			productReference = 83EF78602BF569ED0017FD76 /* Downcoomer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83EF785B2BF569ED0017FD76 /* Build configuration list for PBXProject "Coomloader" */;
+			buildConfigurationList = 83EF785B2BF569ED0017FD76 /* Build configuration list for PBXProject "Downcoomer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83EF785F2BF569ED0017FD76 /* Coomloader */,
+				83EF785F2BF569ED0017FD76 /* Downcoomer */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +228,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +285,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -352,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83EF785B2BF569ED0017FD76 /* Build configuration list for PBXProject "Coomloader" */ = {
+		83EF785B2BF569ED0017FD76 /* Build configuration list for PBXProject "Downcoomer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83EF786D2BF569EF0017FD76 /* Debug */,
@@ -361,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83EF786F2BF569EF0017FD76 /* Build configuration list for PBXNativeTarget "Coomloader" */ = {
+		83EF786F2BF569EF0017FD76 /* Build configuration list for PBXNativeTarget "Downcoomer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83EF78702BF569EF0017FD76 /* Debug */,

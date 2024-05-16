@@ -7,12 +7,15 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct CreatorPostsView: View {
     @State private var creatorID: String = ""
     @State private var posts: [Post] = []
     @State private var isLoading = false
     @State private var errorMessage: String?
+    @State private var offset = 0
+    
     
     var body: some View {
         VStack {
@@ -31,9 +34,15 @@ struct CreatorPostsView: View {
                 Text(errorMessage).foregroundColor(.red)
             } else {
                 List(posts) { post in
-                    VStack(alignment: .leading) {
-                        Text(String(post.title!)).font(.headline)
-                        Text(String(post.service!)).font(.subheadline)
+                    NavigationStack{
+                        VStack{
+                            NavigationLink(destination: PostDetailView(post: post)) {
+                                VStack(alignment: .leading) {
+                                    Text(String(post.title!)).font(.headline)
+                                    Text(String(post.content!)).font(.subheadline)
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -47,15 +56,21 @@ struct CreatorPostsView: View {
         errorMessage = nil
         
         ApiService.shared.fetchCreatorPosts(service: "onlyfans", creatorID: creatorID) { result in
-            DispatchQueue.main.async {
-                self.isLoading = false
-                switch result {
-                case .success(let posts):
-                    self.posts = posts
-                case .failure(let error):
-                    self.errorMessage = error.localizedDescription
+                    DispatchQueue.main.async {
+                        self.isLoading = false
+                        switch result {
+                        case .success(let posts):
+                            self.posts = posts
+                        case .failure(let error):
+                            self.errorMessage = error.localizedDescription
+                        }
+                    }
                 }
             }
         }
+
+struct CreatorPostsView_Previews: PreviewProvider {
+    static var previews: some View {
+        CreatorPostsView()
     }
 }
