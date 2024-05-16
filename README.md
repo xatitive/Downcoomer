@@ -1,6 +1,6 @@
 # Downcoomer
 
-SwiftUI Built Coomer browser/downloader
+SwiftUI Built Coomer Consoomer
 
 Built for simplicity and currently includes the following features: browsing, watching, searching, and a rolling list of recently updated accounts.
 
